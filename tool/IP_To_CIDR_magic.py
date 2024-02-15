@@ -38,6 +38,6 @@ with open(output_file_path, 'w') as file:
     file.writelines(modified_lines)
 
 for change in all_changes:
-    print(f"Changed line {change[0]}: Original '{change[1]}', New '{change[2]}'")
+    print(f"Changed line {change[0]}: from '{change[1]}', to '{change[2]}'")
 
-print("File has been modified and saved.")
+print(f"File {output_file_path} has been modified and saved.")
