@@ -1,5 +1,5 @@
 # ZTerra-Tools
-Utility to help with Zscaler location management via Terraform
+## Utility collection to help with Zscaler location management via Terraform.
 
 input.txt should contain the CIDR Ranges you want to look for. 
 Before executing convert IP to CIDR by running the IP_To_Cidr_magic.py
