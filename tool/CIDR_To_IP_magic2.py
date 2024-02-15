@@ -19,8 +19,8 @@ def replace_cidrs_with_ip_ranges(line, line_number):
     return line, changes
 
 
-input_file_path = 'zia_location_management.tf_cidr_stage' 
-output_file_path = 'zia_location_management.tf'  
+input_file_path = './zia_location_management.tf_cidr_stage' 
+output_file_path = './zia_location_management.tf'  
 
 all_changes = []
 
@@ -37,6 +37,6 @@ with open(output_file_path, 'w') as file:
     file.writelines(modified_lines)
 
 for change in all_changes:
-    print(f"Changed line {change[0]} - {change[1]} - {change[2]}")
+    print(f"Changed line: {change[0]} from {change[1]} to {change[2]}")
 
-print("File has been modified with IP ranges.")
+print(f"File {output_file_path} has been modified with IP ranges.")
